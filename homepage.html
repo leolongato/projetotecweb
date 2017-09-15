@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" type="text/css" href="estiloHP.css">
+        <title>Smart Quiz</title>
+        <meta charset="UTf-8">
+        <script>
+            function clickStart(){
+                    window.open("conteudo.html"); 
+            }
+            function clickAbout(){
+                alert("O Smart Quiz é um jogo de 10 perguntas, que testarão seus conhecimentos sobre assuntos variados.")
+            }
+            
+        </script>
+    </head>
+    <body>
+        <img src="logo.png" id="logo">
+        <form>
+            <button id="btn1" class="btn" value="btnIniciar" onclick="clickStart()">Iniciar</button>
+            <button id="btn2" class="btn" value="btnSobre" onclick="clickAbout()">Sobre</button>
+        </form>
+        <footer>
+            <p id="textofooter">All rights reserved © Leonardo Zoccal Longato - 2017</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+p.clear{
+    clear: both;
+}
+html{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+img {
+    position: relative;
+    display: block;
+    left: auto;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 70%;
+}
+button.btn{
+    font-family:Arial, "Helvetica Neue", Helvetica, sans-serif ;
+    border: none;
+    background-color: darkgrey;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    margin: auto;
+    top: auto;
+    left: 20%;
+    display: inline-block;
+    width: 50%;
+}
+button:hover#btn1{
+    background-color: indianred;
+}
+button:hover#btn2{
+    background-color: limegreen;
+}
+#btn1{
+    width: 30%;
+}
+#btn2{
+    width: 30%;
+}
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: indianred;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#nome{
+    text-align: center;
+}

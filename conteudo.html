@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Smart Quiz - Perguntas</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estiloconteudo.css">
+        <script>
+            var pessoa = prompt("Por favor digite seu nome: ");
+            while (pessoa == null || pessoa == false){
+                alert("Preencha com seu nome para continuar.");
+                var pessoa = prompt("Por favor digite seu nome: ");
+            }
+            function somaresultado(){
+                var contador = 0;
+                var q1 = document.getElementById("correta1").checked;
+                var q2 = document.getElementById("correta2").checked;
+                var q3 = document.getElementById("correta3").checked;
+                var q4 = document.getElementById("correta4").checked;
+                var q5 = document.getElementById("correta5").checked;
+                var q6 = document.getElementById("correta6").checked;
+                var q7 = document.getElementById("correta7").checked;
+                var q8 = document.getElementById("correta8").checked;
+                var q9 = document.getElementById("correta9").checked;
+                var q10 = document.getElementById("correta10").checked;
+                
+                var erradas = ""
+                
+                if (q1 == true){
+                    contador++;
+                }
+                else{
+                    a1 = "Questão 1 - Resposta: China, Nigéria, Paquistão. \n"
+                    erradas = erradas + a1;
+                }
+                if (q2 == true){
+                    contador++;
+                }
+                else{
+                    a2 = "Questão 2 - Resposta: League of Legends (LoL). \n"
+                    erradas = erradas + a2
+                }
+                if (q3 == true){
+                    contador++;
+                }
+                else{
+                    a3 = "Questão 3 - Resposta: Ottawa. \n"
+                    erradas = erradas + a3
+                }
+                if (q4 == true){
+                    contador++;
+                }
+                else{
+                    a4 = "Questão 4 - Resposta: Fêmur. \n"
+                    erradas = erradas + a4
+                }
+                if (q5 == true){
+                    contador++;
+                }
+                else{
+                    a5 = "Questão 5 - Resposta: Baleia Azul. \n"
+                    erradas = erradas + a5
+                }
+                if (q6 == true){
+                    contador++;
+                }
+                else{
+                    a6 = "Questão 6 - Resposta: Tem entre 4 a 6 litros. \n"
+                    erradas = erradas + a6
+                }
+                if (q7 == true){
+                    contador++;
+                }
+                else{
+                    a7 = "Questão 7 - Resposta: Fêmur. \n"
+                    erradas = erradas + a7
+                }
+                if (q8 == true){
+                    contador++;
+                }
+                else{
+                    a8 = "Questão 8 - Resposta: 118. \n"
+                    erradas = erradas + a8
+                }
+                if (q9 == true){
+                    contador++;
+                }
+                else{
+                    a9 = "Questão 9 - Resposta: Lenda. \n"
+                    erradas = erradas + a9
+                }
+                if (q10 == true){
+                    contador++;
+                }
+                else{
+                    a10 = "Questão 10 - Resposta: 8 minutos."
+                    erradas = erradas + a10
+                }
+                alert("Parabéns " + pessoa + " você acertou " + contador + " questões.\n" + "\n" + "Questões erradas: \n" + erradas);
+                window.close("conteudo.html");
+            }
+        </script>
+    </head>
+    <body name="quiz">
+        <img src="logo.png" id="logo2">
+        <article>
+            <p>Questão 1</p>
+            <p class="questão">As três mais populosas cidades do mundo ficam respectivamente em:</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa1" id="correta1" value="op_a">
+                China, Nigéria, Paquistão
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa1" value="op_b">
+                China, Austrália, África
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa1" value="op_c">
+                Brasil, Europa, Oceania
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa1" value="op_d">
+                África, China, Índia
+            </p>
+        </article>
+        <article>
+            <p>Questão 2</p>
+            <p class="questão">Qual é o jogo online mais jogado no mundo atualmente ?</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa2" value="op_a">
+                Counter Strike - Global Ofensive (cs-go)
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa2" value="op_b">
+                Fifa 2017
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa2" id="correta2" value="op_c">
+                League of Legends (LoL)
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa2" value="op_d">
+                Dota 2 
+            </p>
+        </article>
+        <article>
+            <p>Questão 3</p>
+            <p class="questão">Qual a capital do Canadá ?</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa3" value="op_a">
+                Vancouver
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa3" value="op_b">
+                Toronto
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa3" value="op_c">
+                Montreal
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa3" id="correta3" value="op_d">
+                Ottawa
+            </p>
+        </article>
+        <article>
+            <p>Questão 4</p>
+            <p class="questão">Qual o maior osso do corpo humano ?</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa4" value="op_a">
+                Crânio
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa4" id="correta4" value="op_b">
+                Fêmur
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa4" value="op_c">
+                Tíbia
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa4" value="op_d">
+                Sétima costela
+            </p>
+        </article>
+        <article>
+            <p>Questão 5</p>
+            <p class="questão">Qual é o maior animal da Terra ?</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa5" id="correta5" value="op_a">
+                Baleia azul
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa5" value="op_b">
+                Elefante
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa5" value="op_c">
+                Tubarão
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa5" value="op_d">
+                Urso polar
+            </p>
+        </article>
+        <article>
+            <p>Questão 6</p>
+            <p class="questão">Normalmente, quantos litros de sangue uma pessoa tem ?</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa6" value="op_a">
+                Tem entre 2 a 4 litros.
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa6" id="correta6" value="op_b">
+                Tem entre 4 a 6 litros.
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa6" value="op_c">
+                Tem 10 litros.
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa6" value="op_d">
+                Tem 7 litros.
+            </p>
+        </article>
+        <article>
+            <p>Questão 7</p>
+            <p class="questão">Quantas casas decimais tem o número pi ?</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa7" value="op_a">
+                Duas
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa7" value="op_b">
+                Centenas
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa7" value="op_c">
+                Milhares
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa7" id="correta7" value="op_d">
+                Trilhares
+            </p>
+        </article>
+        <article>
+            <p>Questão 8</p>
+            <p class="questão">Atualmente, quantos elementos químicos a tabela periódica possui ?</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa8" value="op_a">
+                125
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa8" value="op_b">
+                115
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa8" id="correta8" value="op_c">
+                118
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa8" value="op_d">
+                98
+            </p>
+        </article>
+        <article>
+            <p>Questão 9</p>
+            <p class="questão">O que a palavra <em>legend</em> significa em português ?</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa9" value="op_a">
+                Legenda
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa9" id="correta9" value="op_b">
+                Lenda
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa9" value="op_c">
+                Legendário
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa9" value="op_d">
+                Legível
+            </p>
+        </article>
+        <article>
+            <p>Questão 10</p>
+            <p class="questão">Quanto tempo a luz do Sol demora para chegar à Terra ?</p>
+            <p>
+                <b>a)</b>
+                <input type="radio" name="alternativa10" value="op_a">
+                10 minutos
+            </p>
+            <p>
+                <b>b)</b>
+                <input type="radio" name="alternativa10" value="op_b">
+                5 horas
+            </p>
+            <p>
+                <b>c)</b>
+                <input type="radio" name="alternativa10" id="correta10" value="op_c">
+                8 minutos
+            </p>
+            <p>
+                <b>d)</b>
+                <input type="radio" name="alternativa10" value="op_d">
+                1 dia
+            </p>
+        </article>
+        <form>
+            <button id="btnsubmit" value="btncheck" onclick="somaresultado()">Ver resultado</button>
+        </form>
+        <footer>
+            <p id="textofooter">All rights reserved © Leonardo Zoccal Longato - 2017</p>
+        </footer>
+    </body>
+</html>
